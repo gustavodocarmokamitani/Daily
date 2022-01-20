@@ -26,6 +26,9 @@
 
     <!-- Responsive css file -->
     <link rel="stylesheet" href="./css/responsive.css">
+
+    <!-- AOS css file -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--  -->
 
 
@@ -46,16 +49,16 @@
                         <div class="mx-auto"></div>
                         <ul class="navbar-nav">
                             <li class="nav-item active">
-                                <a class="nav-link " aria-current="page" href="#">Home</a>
+                                <a class="nav-link " aria-current="page" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link " href="#">about</a>
+                                <a class="nav-link " href="#about">about</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">services</a>
+                                <a class="nav-link" href="#habilidades">habilidades</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">portfolio</a>
+                                <a class="nav-link" href="#servico">serviços</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">pages</a>
@@ -80,22 +83,28 @@
     <main class="site-main">
 
         <!-- Start Banner Area -->
-        <section class="site-banner">
+        <section id='home' class="site-banner">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-12 site-title">
+                    <div class="col-lg-6 col-md-12 site-title" data-aos='fade-right' data-aos-once="true" data-aos-duration="2000" data-aos-offset="100" data-aos-delay="100">
                         <h3 class="title-text">Hey</h3>
                         <h1 class="title-text text-uppercase">I am Kamitani</h1>
                         <h4 class="title-text text-uppercase">Junior Front-End Developer</h4>
-                        <div class="site-buttons">
+                        <p class="para">Criando e desenvolvendo projetos com o objetivo de aprender cada dia mais.</p>
+                        <p class="para">Jovem entusiasta que se dedica a aprender e evoluir. Em busca de alcançar o potencial de ser um grande programador.</p>
+                        <div class="site-buttons py-4">
                             <div class="d-flex -flex-row flex-wrap">
-                                <button type="button" class="btn button primary-button mr-4 text-uppercase">hire
-                                    me</button>
+                                <button type="button" class="btn button primary-button mr-4 text-uppercase">
+                                    <a href="https://mywhats.net/gustavokamitani target=" _blank"
+                                        rel="noopener noreferrer">
+                                        Contato
+                                    </a>
+                                </button>
                                 <button class="btn button secondary-button text-uppercase">Get Cv</button>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 banner-image">
+                    <div class="col-lg-6 col-md-12 banner-image" data-aos='fade-left' data-aos-once="true" data-aos-duration="2000" data-aos-offset="100" data-aos-delay="100">
                         <img src="./img/banner/banner-image.png" alt="banner" class="img-fluid">
                     </div>
                 </div>
@@ -104,15 +113,15 @@
         <!-- End Banner Area -->
 
         <!-- Start About Area -->
-        <section class="about-area">
+        <section id='about' class="about-area">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-6 col-md-12">
-                        <div class="about-image">
+                        <div class="about-image" data-aos='fade-right' data-aos-once="true" data-aos-duration="2000" data-aos-offset="100" data-aos-delay="100">
                             <img src="./img/about-us.png" alt="about us" class="img-fluid">
                         </div>
                     </div>
-                    <div class="col-lg-6 col-md-12 about-title">
+                    <div class="col-lg-6 col-md-12 about-title" data-aos='fade-right' data-aos-once="true" data-aos-duration="2000" data-aos-offset="100" data-aos-delay="100">
                         <h2 class="text-uppercase pt-5">
                             <span>Let me</span>
                             <span>introduce</span>
@@ -120,13 +129,14 @@
                         </h2>
                         <div class="paragraph py-4 w-75">
                             <p class="para">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit atque magni reprehenderit cumque nostrum quam quisquam dolores consectetur, tenetur minima.
+                                Tenho 25 anos e atualmente formado em Analise e Desenvolvimento de Sistemas na Faculdade Impacta de Tecnologias.
                             </p>
                             <p class="para">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita molestias optio praesentium aliquam possimus! Corrupti laboriosam sint accusamus repudiandae pariatur culpa, quasi neque praesentium veniam doloribus cumque consequatur modi consectetur.
+                                Em busca de uma oportunidade para desenvolver e melhorar meus conhecimentos. Procuro algo que possa me instruir de forma crescente e contínua, visando sempre o crescimento entre mim e a empresa.
                             </p>
                         </div>
-                        <button class="btn button primary-button text-uppercase" type="button">Download Cv</button>
+                        <button id='habilidades' class="btn button primary-button text-uppercase" type="button">Download
+                            Cv</button>
                     </div>
                 </div>
             </div>
@@ -137,74 +147,69 @@
         <section class="brand-area">
             <div class="container-fluid">
                 <div class="first-row row">
-                    <div class="col-lg-12 col-md-12 col-xl-6">
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo1.png" alt="Brand-1">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo2.png" alt="Brand-2">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo3.png" alt="Brand-3">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo4.png" alt="Brand-4">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo5.png" alt="Brand-5">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo6.png" alt="Brand-6">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo7.png" alt="Brand-7">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo8.png" alt="Brand-8">
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="single-brand">
-                                    <img src="./img/brands/logo9.png" alt="Brand-9">
-                                </div>
+                    <div class="col-lg-12 col-md-12 col-xl-6 mt-3" data-aos='fade-down' data-aos-once="true" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="1500">
+                        <div class="experience-area">
+                            <div class="brand-title text-center">
+                                <h1 class="text-uppercase title-text">Habilidades</h1>
+                                <p class="para">
+                                    Estou sempre valorizando estruturas com conteúdos simples e designs minimalistas.
+                                </p>
+                                <p class="para">Gosto de desenvolver sistemas do zero e dar vida as ideias dentro do browser.
+                                </p>
+
+                                <p id="experience-text" class="para mt-2">* passe o curso no card para ler sobre *</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-12 col-md-12 col-xl-6">
-                        <div class="experience-area">
-                            <div class="d-flex flex-row years-area">
-                                <h2 class="p-3 years">10</h2>
-                                <h2>
-                                    <span>Years</span>
-                                    <span>Experience</span>
-                                    <span>Working</span>
-                                </h2>
+                        <div class="row">
+                            <div class=" col-lg-4 col-md-6 col-sm-6 pt-3" data-aos='fade-down' data-aos-once="true" data-aos-duration="1000" data-aos-offset="300" data-aos-delay="100">
+                                <div class="experience-img mouseout single-brand d-flex justify-content-center align-items-center">
+                                    <img src="./img/experience/htmlsvg.svg" alt="Brand-1">
+                                </div>
                             </div>
-                            <div class="d-flex flex-row flex-wrap call-area">
-                                <span><i class="fas fa-phone-alt fa-3x px-3"></i></span>
-                                <div class="call-now">
-                                    <a href="#" class="text-uppercase h4 font-roboto">Call Now</a>
-                                    <span class="font-roboto py-2">(11) 98692-7887</span>
+                            <div data-aos='fade-down' data-aos-once="true" data-aos-duration="1000" data-aos-offset="300" data-aos-delay="100" class=" col-lg-4 col-md-6 col-sm-6 pt-3 ">
+                                <div class="experience-img mouseout single-brand d-flex justify-content-center align-items-center">
+                                    <img src="./img/experience/csssvg.svg" alt="Brand-2">
+                                </div>
+                            </div>
+                            <div data-aos='fade-down' data-aos-once="true" data-aos-duration="1000" data-aos-offset="300" data-aos-delay="100" class=" col-lg-4 col-md-6 col-sm-6 pt-3">
+                                <div class="experience-img mouseout single-brand d-flex justify-content-center align-items-center">
+                                    <img src="./img/experience/sasssvg.svg" alt="Brand-3">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div data-aos='fade-down' data-aos-once="true" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="500" class=" col-lg-4 col-md-6 col-sm-6">
+                                <div class="experience-img mouseout single-brand d-flex justify-content-center align-items-center">
+                                    <img src="./img/experience/javascriptsvg.svg" alt="Brand-4">
+                                </div>
+                            </div>
+                            <div data-aos='fade-down' data-aos-once="true" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="500" class=" col-lg-4 col-md-6 col-sm-6">
+                                <div class="experience-img mouseout single-brand d-flex justify-content-center align-items-center">
+                                    <img src="./img/experience/bootstrapsvg.svg" alt="Brand-5">
+                                </div>
+                            </div>
+                            <div data-aos='fade-down' data-aos-once="true" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="500" class=" col-lg-4 col-md-6 col-sm-6">
+                                <div class="experience-img mouseout single-brand d-flex justify-content-center align-items-center">
+                                    <img src="./img/experience/reactsvg.svg" alt="Brand-6">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div data-aos='fade-down' data-aos-once="true" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="1000" class=" col-lg-4 col-md-6 col-sm-6">
+                                <div class="experience-img mouseout single-brand d-flex justify-content-center align-items-center">
+                                    <img src="./img/experience/nodejssvg.svg" alt="Brand-7">
+                                </div>
+                            </div>
+                            <div data-aos='fade-down' data-aos-once="true" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="1000" class=" col-lg-4 col-md-6 col-sm-6">
+                                <div class="experience-img mouseout single-brand d-flex justify-content-center align-items-center">
+                                    <img src="./img/experience/githubsvg.svg" alt="Brand-8">
+                                </div>
+                            </div>
+                            <div data-aos='fade-down' data-aos-once="true" data-aos-duration="1000" data-aos-offset="100" data-aos-delay="1000" class=" col-lg-4 col-md-6 col-sm-6">
+                                <div class="experience-img mouseout single-brand d-flex justify-content-center align-items-center">
+                                    <img src="./img/experience/figmasvg.svg" alt="Brand-9">
                                 </div>
                             </div>
                         </div>
@@ -215,45 +220,17 @@
         <!-- End Brand Area -->
 
         <!-- Start Services Area -->
-        <section class="services-area">
+        <section id='servico' class="services-area">
             <div class="container">
-                <div class="row">
+                <div class="row" data-aos='fade-up' data-aos-once="true" data-aos-duration="2000" data-aos-offset="100" data-aos-delay="100">
                     <div class="col-lg-12 text-center services-title">
-                        <h1 class="text-uppercase title-text">Services Offers</h1>
-                        <p class="para">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit optio repudiandae tempore facere? Nihil iusto vero porro accusamus! Iure, libero.
-                        </p>
+                        <h1 class="text-uppercase title-text">Serviços</h1>
+
                     </div>
                 </div>
                 <div class="container services-list">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6 col-xs-12">
-                            <div class="services">
-                                <div class="services-img text-center py-4">
-                                    <img src="./img/services/s1.png" alt="services-1">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">Front-End Developer</h5>
-                                    <p class="card-text- text-secondary">
-                                        Some quick example texto to build on the card title and make up the bulk of the card's content.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-xs-12">
-                            <div class="services">
-                                <div class="services-img text-center py-4">
-                                    <img src="./img/services/s2.png" alt="services-2">
-                                </div>
-                                <div class="card-body text-center">
-                                    <h5 class="card-title text-uppercase font-roboto">UX/UI Design</h5>
-                                    <p class="card-text- text-secondary">
-                                        Some quick example texto to build on the card title and make up the bulk of the card's content.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="col-lg-3 col-md-6 col-xs-12" data-aos='fade-up' data-aos-once="true" data-aos-duration="2000" data-aos-offset="100" data-aos-delay="500">
                             <div class="services">
                                 <div class="services-img text-center py-4">
                                     <img src="./img/services/s3.png" alt="services-3">
@@ -261,12 +238,25 @@
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">Web Design</h5>
                                     <p class="card-text- text-secondary">
-                                        Some quick example texto to build on the card title and make up the bulk of the card's content.
+                                        Desenvolvo de sites profissionais, blogs, portfólios, landing pages e e-commerce.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-xs-12">
+                        <div class="col-lg-3 col-md-6 col-xs-12" data-aos='fade-up' data-aos-once="true" data-aos-duration="2000" data-aos-offset="100" data-aos-delay="1000">
+                            <div class="services">
+                                <div class="services-img text-center py-4">
+                                    <img src="./img/services/s2.png" alt="services-2">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">UX/UI Design</h5>
+                                    <p class="card-text- text-secondary">
+                                        Desenho interface de forma que ela seja clara, objetiva e principalmente intuitiva para o usuário.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12" data-aos='fade-up' data-aos-once="true" data-aos-duration="2000" data-aos-offset="100" data-aos-delay="1500">
                             <div class="services">
                                 <div class="services-img text-center py-4">
                                     <img src="./img/services/s4.png" alt="services-4">
@@ -274,7 +264,20 @@
                                 <div class="card-body text-center">
                                     <h5 class="card-title text-uppercase font-roboto">seo optimize</h5>
                                     <p class="card-text- text-secondary">
-                                        Some quick example texto to build on the card title and make up the bulk of the card's content.
+                                        Implemento conjuntos de técnicas em seu código, fazendo com que seu projeto apareça melhor nas buscas de pesquisas.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-xs-12" data-aos='fade-up' data-aos-once="true" data-aos-duration="2000" data-aos-offset="100" data-aos-delay="2000">
+                            <div class="services">
+                                <div class="services-img text-center py-4">
+                                    <img src="./img/services/s1.png" alt="services-1">
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="card-title text-uppercase font-roboto">Front-End Developer</h5>
+                                    <p class="card-text- text-secondary">
+                                        Desenvolvo interfaces gráficas do usuário de um site, por meio do uso de HTML, CSS e JavaScript, para que os usuários possam visualizar e interagir.
                                     </p>
                                 </div>
                             </div>
@@ -286,7 +289,7 @@
         <!-- End Services Area -->
 
         <!-- Start Project Area -->
-        <section class="project-area">
+        <!-- <section id='projeto' class="project-area">
             <div class="container">
                 <div class="project-title pb-5">
                     <h1 class="text-uppercase title-h1">Recently Done Project</h1>
@@ -420,11 +423,11 @@
 
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- End Project Area -->
 
         <!-- Start About Me Area -->
-        <section class="about-area">
+        <!-- <section id='aboutme' class="about-area">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-lg-12">
@@ -508,17 +511,16 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- End About Me Area -->
 
         <!-- Start Subscribe Me Area -->
-        <section class="subscribe-us-area">
+        <!-- <section id='subscribe' class="subscribe-us-area">
             <div class="container subscribe">
                 <div class="row">
                     <div class="col-lg-12 text-center subscribe-title">
-                        <h4 class="text-uppercase">Get Update From anywhere</h4>
-                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, consequuntur.
-                        </p>
+                        <h4 class="text-uppercase">Social Midia</h4>
+                        <p class="para">Teste</p>
                     </div>
                 </div>
                 <div class="d-flex d-sm-flex justify-content-center ">
@@ -536,29 +538,24 @@
                     </form>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- End Subscribe Me Area -->
 
         <!-- Start Footer Area -->
-        <footer class="footer-area">
+        <footer id='footer' class="footer-area">
             <div class="container">
-                <div class="">
-                    <div class="site-logo text-center py-4">
-                        <a href="#"><img src="./img/logo.png" alt="logo"></a>
-                    </div>
-                    <div class="social text-center">
-                        <h5 class="text-uppercase">Follow me</h5>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                    </div>
-                    <div class="copyrights text-center">
-                        <p class="para">
-                            Copyright ©2019 All rights reserved | This template is made with by
-                            <a href="#"><span style="color: var(--primary-color);">Gustavo Kamitani</span></a>
-                        </p>
-                    </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Follow me</h5>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="copyrights text-center">
+                    <p class="para">
+                        Copyright ©2022 All rights reserved | This template is made with by
+                        <a href="#"><span style="color: var(--primary-color);">Gustavo Kamitani</span></a>
+                    </p>
                 </div>
             </div>
         </footer>
@@ -566,8 +563,6 @@
 
     </main>
     <!-- End Main Area -->
-
-
 
 
     <!-- Jquery js file -->
@@ -582,11 +577,18 @@
     <!-- Custom js file -->
     <script src="./js/main.js"></script>
 
+    <!--  Owl-carousel js file  -->
+    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+
     <!-- Magnific popup script file -->
     <script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
 
-    <!-- Owl Carousel script file -->
-    <script src="./vendor/owl-carousel/js/owl.carousel.min.js"></script>
+    <!-- AOS script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

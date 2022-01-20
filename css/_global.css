@@ -6,7 +6,9 @@
     text-transform: uppercase;
 }
 
+
 /* Buttons */
+
 .button {
     padding: .8rem 2.2rem;
     font: normal 500 16px/20px var(--roboto);
@@ -30,17 +32,20 @@
     color: black;
 }
 
-.button.primary-button::after, .button.secondary-button::after{
+.button.primary-button::after,
+.button.secondary-button::after {
     content: "";
     position: absolute;
-    top: -2px; left: -2px;
-    bottom: -2px; right: -2px;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
     background: var(--gradient-color);
     z-index: -1;
     border-radius: 4px;
 }
 
-.button.secondary-button { 
+.button.secondary-button {
     background: white;
     background-clip: padding-box;
     transform: background .6 ease;
@@ -51,38 +56,40 @@
     color: whitesmoke;
     box-shadow: var(--box-shadow);
     border: none;
- }
+}
 
+p.para {
+    color: var(--text-color);
+    font: normal 500 16px/20 px var(--roboto);
+}
 
- p.para {
-     color: var(--text-color);
-     font: normal 500 16px/25px var(--roboto);
- }
+.font-roboto {
+    font-family: var(--roboto);
+}
 
- .font-roboto {
-     font-family: var(--roboto);
- }
+button:focus,
+button:active button:hover .btn:active,
+.btn.active {
+    outline: 0px !important;
+    box-shadow: none !important;
+}
 
- button:focus,
- button:active
- button:hover
- .btn:active,
- .btn.active {
-     outline: 0px !important;
-     box-shadow: none !important;
- }
+.title-h1 {
+    font: normal bold 39px/40px var(--roboto);
+}
 
- .title-h1 {
-     font: normal bold 39px/40px var(--roboto);
- }
+.navbar_fixed {
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: .4s ease;
+}
 
- .navbar_fixed {
-     position: fixed;
-     width: 100%;
-     top: -1px;
-     left: 0; right: 0;
-     background: #ffffff;
-     box-shadow: var(--box-shadow);
-     z-index: 999;
-     transition: .4s ease;
- }
+#experience-text {
+    transition: .5s ease-in-out;
+}

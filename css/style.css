@@ -1,16 +1,19 @@
 /* Import fonts from fronts.css */
+
 @import url(./fonts.css);
 
 /* Import variables */
+
 @import url(./_variables.css);
 
 /* Import globals */
+
 @import url(./_global.css);
 
-
 /* start navigation */
+
 .header_area .main-menu .navbar .navbar-brand {
-    padding: 0 2rem 0 5rem;    
+    padding: 0 2rem 0 5rem;
 }
 
 .header_area .main-menu .navbar {
@@ -25,12 +28,11 @@
     color: var(--title-color);
 }
 
-.header_area .main-menu .navbar-nav .active a{
+.header_area .main-menu .navbar-nav .active a {
     background: var(--gradient-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    
 }
 
 .header_area .main-menu .navbar-nav a:hover {
@@ -39,10 +41,13 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
+
 /* end navigation */
 
 
 /* Start Bannner Area */
+
 .site-main .site-banner {
     background: url(../img/banner//home-banner.png) no-repeat 0% 50%;
 }
@@ -70,45 +75,65 @@
     font-size: 1.5rem;
 }
 
-.site-main .site-banner .banner-image > img {
-    padding: 7rem 0;
-    width: 90rem;
+.site-main .site-banner .site-title .site-buttons .btn a {
+    text-decoration: none;
+    color: whitesmoke;
 }
+
+.site-main .site-banner .site-title .site-buttons .btn:hover>a {
+    color: black;
+}
+
+.site-main .site-banner .banner-image>img {
+    padding: 7rem 0;
+    width: 60rem;
+}
+
 
 /* End Bannner Area */
 
+
 /* Start About Area */
+
 .site-main .about-area {
     padding: 8rem 5rem;
 }
 
-.site-main .about-area .about-title h2 > span {
+.site-main .about-area .about-title h2>span {
     display: block;
     font: normal bold 49px/60px var(--roboto);
     letter-spacing: 21px;
 }
 
-.site-main .about-area .about-title .paragraph > P {
+.site-main .about-area .about-title .paragraph>P {
     padding: .4rem 0rem;
 }
+
+
 /* End About Area */
 
+
 /* Start Brand Area */
+
 .site-main .brand-area {
-    padding: 1rem 20rem;
+    padding: 1rem 22rem;
     margin-bottom: 4rem;
     position: relative;
 }
 
 .site-main .brand-area .first-row .col-lg-4 {
     display: flex;
-    justify-content: center;   
+    justify-content: center;
 }
 
-.site-main .brand-area .first-row .col-lg-4 > .single-brand {
+.site-main .brand-area .brand-title h1 {
+    font-size: 35px;
+}
+
+.site-main .brand-area .first-row .col-lg-4>.single-brand {
     border: 1px solid var(--border-color);
     text-align: center;
-    padding: 1.8rem 0rem;
+    padding: .4rem 0rem;
     margin: .9rem 0rem;
     width: 180px;
     height: 100px;
@@ -116,22 +141,23 @@
     transition: .4s ease;
 }
 
-.site-main .brand-area .first-row .col-lg-4 > .single-brand > img {
-    width: 50%;
+.site-main .brand-area .first-row .col-lg-4>.single-brand>img {
+    width: 30%;
     transition: .4s ease;
+    filter: brightness(80%);
 }
 
-.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover {
+.site-main .brand-area .first-row .col-lg-4>.single-brand:hover {
     box-shadow: var(--box-shadow);
     transform: scale(1.1);
 }
 
-.site-main .brand-area .first-row .col-lg-4 > .single-brand:hover > img {
-    filter: brightness(0.15);
+.site-main .brand-area .first-row .col-lg-4>.single-brand:hover>img {
+    filter: brightness(1);
 }
 
 .site-main .brand-area .experience-area span {
-    display: block;    
+    display: block;
 }
 
 .site-main .brand-area .experience-area .years-area {
@@ -141,16 +167,6 @@
     height: 18rem;
     padding-left: 8rem;
     position: relative;
-} 
-
-.site-main .brand-area .experience-area .bg-panel {
-    position: absolute;
-    top: 2.5%;
-    background: #e029290a;
-    width: 400px;
-    height: 400px;
-    margin-left: 140px;
-    z-index: -1;
 }
 
 .site-main .brand-area .experience-area .years-area .years {
@@ -159,24 +175,26 @@
     z-index: 2;
 }
 
-.site-main .brand-area .experience-area .years-area h2 > span {
+.site-main .brand-area .experience-area .years-area h2>span {
     font: normal 600 22px/30px var(--roboto);
 }
 
 .site-main .brand-area .experience-area .call-area {
-    padding-left: 10rem;    
+    padding-left: 10rem;
 }
 
-.site-main .brand-area .experience-area .call-area .call-now > a {
-    text-decoration: none;    
+.site-main .brand-area .experience-area .call-area .call-now>a {
+    text-decoration: none;
 }
+
 
 /* End Brand Area */
 
 
 /* Start Service Area */
+
 .site-main .services-area {
-    padding: 7rem 2rem;
+    padding: 10rem 2rem;
 }
 
 .site-main .services-area .services-title {
@@ -187,7 +205,7 @@
     font-size: 35px;
 }
 
-.site-main > .services-area .services {
+.site-main>.services-area .services {
     background: rgba(248, 252, 253, 0.973);
     padding: 2rem 0rem;
     width: 16rem;
@@ -195,14 +213,16 @@
     transition: box-shadow .7s ease;
 }
 
-.site-main > .services-area .services:hover {
+.site-main>.services-area .services:hover {
     box-shadow: var(--box-shadow);
-
 }
+
+
 /* End Service Area */
 
 
 /* Start Project Area */
+
 .site-main .project-area {
     padding: 4rem 0rem;
 }
@@ -211,27 +231,30 @@
     background: transparent;
     border: none;
     font: normal 500 16px/130px var(--roboto);
-    text-transform: uppercase;    
+    text-transform: uppercase;
 }
 
-.site-main .project-area .button-group button + button {
+.site-main .project-area .button-group button+button {
     padding-left: 3rem;
 }
 
-.site-main .project-area .grid .our-project > .title h4 {
+.site-main .project-area .grid .our-project>.title h4 {
     font: normal 700 25px/12px var(--roboto);
 }
 
 .site-main .project-area .grid .our-project .img a:hover img {
-    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);    
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
     transition: ease .6s;
 }
 
+
 /* End Project Area */
 
+
 /* Start About Area */
+
 .site-main .about-area .about-title p {
-    padding: 1rem 7rem;    
+    padding: 1rem 7rem;
 }
 
 .site-main .about-area .client {
@@ -267,9 +290,13 @@
     width: 12px;
     height: 12px;
 }
+
+
 /* End About Area */
 
+
 /* Start Subscribe Me Area */
+
 .site-main .subscribe-us-area .subscribe {
     background: url(../img//subscribe-bg.png) no-repeat;
     padding: 10rem 0;
@@ -305,31 +332,35 @@
     color: black;
     padding: .8rem 2rem;
 }
+
+
 /* End Subscribe Me Area */
+
 
 /* Start Footer Area */
 
 footer.footer-area {
     padding: 5rem 0;
-    background: url(../img/footer-bg.png);    
+    background: url(../img/footer-bg.png);
 }
 
 footer.footer-area .social h5 {
     font: normal 500 23px/30px var(--roboto);
 }
 
-footer.footer-area .social a > i {
+footer.footer-area .social a>i {
     font-size: 22px;
     padding: 2rem;
     color: var(--border-color);
 }
 
-footer.footer-area .social a:hover > i {
-    color: var(--primary-color );
+footer.footer-area .social a:hover>i {
+    color: var(--primary-color);
 }
 
 footer.footer-area .copyrights p a {
     text-decoration: none;
 }
+
 
 /* End Footer Area */
